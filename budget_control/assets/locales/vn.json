@@ -1,13 +1,19 @@
 {
   "login": {
     "label": {
-
+      "login":"Login",
+      "password":"Password",
+      "forgot":"Forgot Password?",
+      "phone": "Phone Number"
     },
     "button": {
-
+      "login":"Login",
+      "register": "Don't have an account?"
     },
     "message": {
-
+      "field_empty": "Please fill in all fields.",
+      "password_error_invalid": "Password is invalid.",
+      "phone_error": "Phone number is invalid."
     }
   },
   "register": {

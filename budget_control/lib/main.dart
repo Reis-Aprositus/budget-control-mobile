@@ -7,8 +7,10 @@ import 'app/routes/app_pages.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  runApp(const MyApp());
-}
+
+  BaseCommon.instance.init().then((_) {
+    runApp(const MyApp());
+  });}
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -24,6 +26,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       translationsKeys: AppTranslation.translations,
       locale: Locale(BaseCommon.instance.locale,BaseCommon.instance.locale.toUpperCase()),
+      fallbackLocale: const Locale('en', 'US'),
     );
   }
 }
